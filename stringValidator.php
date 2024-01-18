@@ -46,7 +46,7 @@ class StringValidator
 
     public $string_allowed = [];
 
-/// type string
+/// In string type
     public $in_alpha= FALSE;
     public $in_num = FALSE;
     public $in_alpha_num = FALSE;
@@ -54,7 +54,7 @@ class StringValidator
     public $in_string_allowed = FALSE;
 
 
-///set
+///set output string type
     public $set_alpha = TRUE;
     public $set_num = FALSE;
     public $set_alpha_num = FALSE;
@@ -71,6 +71,7 @@ class StringValidator
     }
 
     */
+/// debes 
 
     public function stringClean()
     {
@@ -79,7 +80,7 @@ class StringValidator
         $this->out_string = $trimmed;
 
         // limitamos el tamano de caracteres de la cadena
-        //echo substr('abcdef', 0, 4);  // abcd
+        //echo substr('abcdef', 0, 4);  // abcd 
 
          $this->in_lenght_string = strlen($this->in_string);// numero de caracteres de la cadena original
 
@@ -87,7 +88,7 @@ class StringValidator
          $this->out_string = $sub_string;
 
 
-         // seteamos el type del string
+         // obtenemos  el type del string de entrada
         //ctypes
         ctype_alpha($this->out_string) ? $this->in_alpha = TRUE : $this->in_alpha = FALSE;
         ctype_digit($this->out_string) ? $this->in_num = TRUE : $this->in_num = FALSE;
