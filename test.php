@@ -50,7 +50,7 @@ $Testclass->set_string_allowed = TRUE;
 
 
 // set valores permitidos en el string
-$array_test[] = 'julio2';
+$array_test[] = 'julio2.';
 $array_test[] = 'cadena 2221';
 $array_test[] = 'cadena21212 1';
 $array_test[] = 'cade2221212na 1';
@@ -80,7 +80,8 @@ echo "in_special_chars==>".var_dump($Testclass->in_special_chars);
 echo "<br>";
 echo "in_string_alloweds==>".var_dump($Testclass->in_string_allowed);
 echo "<br>";
-
+echo "in_lenght_string==>".$Testclass->in_lenght_string;
+echo "<br>";
 
 
 

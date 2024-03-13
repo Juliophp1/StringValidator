@@ -40,7 +40,8 @@ class StringValidator
     public $out_string; 
 
     public $in_lenght_string;
-    public $set_lenght = 20;
+    public $max_char_allowed = 20;
+    public $set_cut_lenght = 20; //cut string
 
     public $special_chars_not_allowed = '!"#$%&\'()*+,-./:;<=>?@[\]^_`{|}~';
 
@@ -84,7 +85,7 @@ class StringValidator
 
          $this->in_lenght_string = strlen($this->in_string);// numero de caracteres de la cadena original
 
-         $sub_string = substr($this->in_string, 0, $this->set_lenght);  // abcd
+         $sub_string = substr($this->in_string, 0, $this->set_cut_lenght);  // abcd
          $this->out_string = $sub_string;
 
 
