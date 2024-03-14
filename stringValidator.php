@@ -89,7 +89,7 @@ class StringValidator
          $this->out_string = $sub_string;
 
 
-         // obtenemos  el type del string de entrada
+         // obtenemos  el type del string de entrada.
         //ctypes
         ctype_alpha($this->out_string) ? $this->in_alpha = TRUE : $this->in_alpha = FALSE;
         ctype_digit($this->out_string) ? $this->in_num = TRUE : $this->in_num = FALSE;
